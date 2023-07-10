@@ -1,11 +1,13 @@
+var altura = 0
+var peso = 0
 
 function limpar(){
-    console.log("Esta limpando");
+    document.getElementById('story').innerText = ''
 }
 
 function calcular(){
-    var altura = document.getElementById("altura").value
-    var peso = document.getElementById("peso").value
+    altura = document.getElementById("altura").value
+    peso = document.getElementById("peso").value
     
     var imc = peso / altura **2
     console.log(imc)
